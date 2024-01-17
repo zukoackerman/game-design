@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link tags -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b9864528d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start info showing section-->
+    <div class="upper">
+      <p>Time:<span id="time">00:00</span></p>
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>errors: <span id="point"></span></p>
+    </div>
+
+    <div id="heart"></div>
+    <!-- end info showing section-->
+    <!-- start display section -->
+    <div class="display">
+      <p id="text"></p>
+      <div id="deadLine"></div>
+    </div>
+    <!-- end display section -->
+    <!-- star keyboard -->
+    <div class="keyboard">
+      <div>
+        <button>`</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>-</button>
+        <button>=</button>
+        <button id="backspace">Backspace</button>
+      </div>
+      <div>
+        <button id="tab">Tab</button>
+        <button>q</button>
+        <button>w</button>
+        <button>e</button>
+        <button>r</button>
+        <button>t</button>
+        <button>y</button>
+        <button>u</button>
+        <button>i</button>
+        <button>0</button>
+        <button>p</button>
+        <button>[</button>
+        <button>]</button>
+        <button>\</button>
+      </div>
+      <div>
+        <button id="capslock">CapsLock</button>
+        <button>a</button>
+        <button>s</button>
+        <button>d</button>
+        <button>f</button>
+        <button>g</button>
+        <button>h</button>
+        <button>j</button>
+        <button>k</button>
+        <button>l</button>
+        <button>;</button>
+        <button>'</button>
+        <button id="enter">Enter</button>
+      </div>
+
+      <div>
+        <button id="shift">Shift</button>
+        <button>z</button>
+        <button>x</button>
+        <button>c</button>
+        <button>v</button>
+        <button>b</button>
+        <button>n</button>
+        <button>m</button>
+        <button>,</button>
+        <button>.</button>
+        <button>/</button>
+        <button id="shift">Shift</button>
+      </div>
+      <div>
+        <button id="space"></button>
+      </div>
+    </div>
+    <!-- end keyboard -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

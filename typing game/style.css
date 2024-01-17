@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+img {
+  width: 100%;
+}
+
+/* star info show */
+.upper {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.upper p {
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+#heart {
+  /* position: absolute;
+  left: 140px;
+  top: 70px; */
+  overflow: hidden;
+  width: 150px;
+}
+#heart::before {
+  font-size: 30px;
+  content: "\f004 \f004 \f004 \f004 \f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: red;
+}
+/* end infoshow */
+/* start .display */
+.display {
+  position: relative;
+  background-color: black;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 5px rgb(40, 39, 39), -1px -1px rgb(49, 48, 48);
+  overflow: hidden;
+}
+
+.display p span {
+  text-align: center;
+  display: inline-block;
+  background-color: cyan;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+  box-shadow: 1px -1px 10px cyan, -1px 1px 10px cyan;
+}
+.typed {
+  opacity: 0;
+}
+#text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+  position: absolute;
+  letter-spacing: 2px;
+  text-align: center;
+  top: 0px;
+  left: 70px;
+  font-size: 20px;
+  /* transition: all 0.2s linear; */
+}
+
+#deadLine {
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  left: 50px;
+  border-radius: 5px;
+  top: 195px;
+  background-color: orangered;
+  box-shadow: 1px -1px 10px orangered, -1px -1px 10px orangered;
+}
+/* end .display */
+/* start .keyboard */
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 820px;
+  height: 280px;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: -2px 4px 1px rgb(200, 198, 198), 2px -2px rgb(200, 198, 198);
+}
+
+.keyboard div {
+  display: flex;
+  gap: 8px;
+}
+
+.keyboard div button {
+  position: relative;
+  width: 50px;
+  padding-left: 13px;
+  text-align: left;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #eae8e8, rgb(230, 220, 220));
+  box-shadow: -3px -3px 5px #474743, 3px 3px 5px #fff;
+  border: none;
+  overflow: hidden;
+}
+.keyboard div button:active {
+  box-shadow: 2px 2px 4px blue, -2px -2px 4px blue;
+  color: navy;
+}
+
+.keyboard div button::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  bottom: 9px;
+  border-radius: 10px;
+  right: 7px;
+  background: linear-gradient(90deg, #e3e5e5, rgb(230, 210, 210));
+  box-shadow: -10px -10px -10px rgb(67, 63, 63), 10px 10px 10px gray;
+  border-left: 1px solid rgb(221, 220, 220);
+  border-top: 1px solid rgb(212, 210, 210);
+  border-bottom: 1px solid rgb(207, 205, 205);
+}
+
+#tab {
+  width: 75px;
+}
+#capslock {
+  width: 95px;
+}
+
+#shift {
+  width: 130px;
+}
+
+#backspace {
+  width: 90px;
+}
+
+#enter {
+  width: 100px;
+}
+
+#space {
+  width: 500px;
+  margin: auto;
+}
+
+.active {
+  box-shadow: 2px 2px 4px blue, -2px -2px 4px blue !important;
+  color: navy;
+}
+/* end .keyboard */
