@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start twinkle star -->
+    <p class="star1"></p>
+    <p class="star2"></p>
+    <p class="star3"></p>
+    <p class="star4"></p>
+    <p class="star5"></p>
+    <p class="star6"></p>
+    <p class="star7"></p>
+    <p class="star8"></p>
+    <p class="star9"></p>
+    <p class="star10"></p>
+    <!-- end twinkle star -->
+    <!-- background image -->
+    <!-- start intro display -->
+    <input type="radio" id="login" />
+    <div class="intro">
+      <div class="heading">
+        <div class="welcome">WELCOME FROM</div>
+        <div class="fallen">THE FALLEN</div>
+      </div>
+      <div class="buttonContainer">
+        <label for="login" class="button"> Login</label>
+        <label for="login" class="button">Sign Up</label>
+      </div>
+    </div>
+    <!-- end intro display -->
+    <!-- start form -->
+    <form>
+      <!-- start collectin info -->
+      <div class="register">Register here to be a knight for Neon</div>
+      <div class="inGameName">
+        <input type="text" placeholder="Enter your code name" required />
+      </div>
+      <div class="password">
+        <input type="password" placeholder="Enter password" required />
+        <h6>Password must be 8 letters.Must contain [A-Z],[a-z],[0-9]</h6>
+      </div>
+      <!-- end collecting info -->
+      <!-- stat character choice -->
+      <div class="choose">Choose a character</div>
+      <div class="characters">
+        <label for="peka"> Pekachu </label>
+
+        <label for="dragon"> Drogo</label>
+        <label for="amongus"> Starlord </label>
+      </div>
+      <!-- character show place -->
+      <div class="showPlace">
+        <input type="radio" id="amongus" name="character" checked />
+        <div class="amongus">
+          <span class="imgContainer">
+            <img src="010534_1346719.gif" alt="" />
+          </span>
+          <h2>Starlord</h2>
+        </div>
+        <input type="radio" id="dragon" name="character" />
+        <div class="dragon">
+          <span class="imgContainer">
+            <img src="n1582649.gif" alt="" />
+          </span>
+          <h2>Drogo</h2>
+        </div>
+
+        <input type="radio" id="peka" name="character" />
+        <div class="peka">
+          <span class="imgContainer">
+            <img
+              src="da2xxw5-bd5f33a7-19c8-4a97-9ab7-79be9c1bf6e3.gif"
+              alt=""
+            />
+          </span>
+          <h2>Pekachu</h2>
+        </div>
+      </div>
+      <!-- end character choice -->
+      <!-- playbtn -->
+      <div class="playBtn">
+        <a href="../game intro/game.html" target="_self">play</a>
+      </div>
+    </form>
+    <!-- end form -->
+  </body>
+</html>

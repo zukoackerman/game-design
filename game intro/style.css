@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: black;
+}
+
+/* for text */
+body div:first-child {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  font-size: 30px;
+  font-weight: 700;
+  left: 40%;
+  width: 0px;
+  color: #fff;
+  white-space: nowrap;
+  border-right: 4px solid transparent;
+
+  overflow: hidden;
+  animation: type 3s steps(20) forwards, blink 0.8s linear infinite;
+  animation-delay: 18s;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 310px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #77f5fc;
+  }
+}
+
+/* for .background */
+.background {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+  animation: zoom 2s ease-in 16s forwards;
+}
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.8);
+  }
+}
+
+img {
+  width: 100%;
+}
+/* start running men */
+.background div {
+  position: absolute;
+  left: -200px;
+}
+.peka {
+  animation: run 4.5s ease-in infinite normal;
+  bottom: 25%;
+  width: 8%;
+}
+
+.amongus {
+  animation: run 5s linear 0.5s infinite normal;
+  bottom: 23%;
+  width: 7%;
+}
+
+.amongus2 {
+  animation: run 5s linear 1s infinite reverse;
+  bottom: 16%;
+  width: 22%;
+}
+.jerry {
+  width: 50px;
+  animation: run 9s ease-in 6s 1;
+  bottom: 22%;
+}
+
+.ball {
+  font-size: 10px;
+  text-align: center;
+  font-family: "MuseoModerno", cursive;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #77f5fc;
+  box-shadow: -2px -2px 5px#77F5FC, 2px 2px 5px#77F5FC, 2px -2px 5px#77F5FC,
+    -2px 2px 5px #77f5fc;
+  border-radius: 50%;
+  animation: run 9s ease-in 6s 1;
+  bottom: 22%;
+  left: -155px;
+}
+
+.tom {
+  width: 15%;
+  animation: run 5s linear 11s 1;
+  bottom: 19%;
+}
+
+@keyframes run {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+/* end runningmen */
+
+/* start twinkle star  */
+.background p {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #77f5fc;
+  box-shadow: -1px -1px 10px#77F5FC, 1px 1px 10px#77F5FC, 1px -1px 10px#77F5FC,
+    -1px 1px 10px#77F5FC;
+  animation: twinkle 0.5s ease-out infinite alternate;
+}
+
+.star1 {
+  left: 10%;
+  top: 30%;
+  animation-delay: 1s !important;
+}
+
+.star2 {
+  left: 30%;
+  top: 15%;
+}
+
+.star3 {
+  left: 60%;
+  top: 3%;
+  animation-delay: 1.5s !important;
+}
+
+.star4 {
+  left: 75%;
+  top: 20%;
+  animation-delay: 2s !important;
+}
+
+.star5 {
+  left: 90%;
+  top: 10%;
+}
+
+.star6 {
+  left: 3%;
+  top: 10%;
+  animation-delay: 0.5s !important;
+}
+
+.star7 {
+  left: 10%;
+  top: 15%;
+}
+
+.star8 {
+  left: 88%;
+  top: 22%;
+  animation-delay: 300ms !important;
+}
+
+.star9 {
+  left: 52%;
+  top: 2%;
+}
+
+.star10 {
+  left: 99%;
+  top: 8%;
+  animation-delay: 0.3s !important;
+}
+
+@keyframes twinkle {
+  from {
+    box-shadow: -1px -1px 10px#77F5FC, 1px 1px 10px#77F5FC, 1px -1px 10px#77F5FC,
+      -1px 1px 10px#77F5FC;
+  }
+  to {
+    box-shadow: -4.9px -4.9px 10px#77F5FC, 4.9px 4.9px 10px#77F5FC,
+      4.9px -4.9px 10px#77F5FC, -4.9px 4.9px 10px#77F5FC;
+  }
+}
+/* end twinkle star */
+
+/* start falling star */
+.background h1 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #77f5fc;
+  box-shadow: -0.5px -0.5px 10px#77F5FC, 0.5px 0.5px 10px#77F5FC,
+    0.5px -0.5px 10px#77F5FC, -0.5px 0.5px 10px#77F5FC;
+  animation: starFall 1s linear infinite;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 400px;
+  height: 1.5px;
+  background: linear-gradient(90deg, #77f5fc, transparent);
+}
+#fStar1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+#fStar2 {
+  top: 5%;
+  left: 35%;
+  animation-delay: 0.5s;
+  animation-duration: 0.8s;
+}
+
+#fStar3 {
+  top: 3%;
+  left: 20%;
+  animation-delay: 0.5s;
+  animation-duration: 1.1s;
+}
+
+#fStar4 {
+  top: 8%;
+  left: 50%;
+  animation-delay: -0.8s;
+  animation-duration: 0.8s;
+}
+
+#fStar6 {
+  top: 5%;
+  left: 70%;
+  animation-delay: -0.9s;
+  animation-duration: 1s;
+}
+
+#fStar7 {
+  top: 10%;
+  left: 90%;
+  animation-delay: 0.5s;
+  animation-duration: 1.1s;
+}
+
+#fStar8 {
+  top: 9%;
+  left: 60%;
+  animation-duration: 0.6s;
+  animation-delay: 0.9s;
+}
+
+@keyframes starFall {
+  0% {
+    transform: rotate(220deg) translateX(0);
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(220deg) translateX(-400px);
+    opacity: 0;
+  }
+}
+
+/* end falling star */
